@@ -1,0 +1,67 @@
+﻿<Window x:Class="DatKod.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatKod"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="BAJ DatKod" Height="450" Width="800">
+    <Grid Background="#FF272727">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="row_Ueberschrift" Height="75*"/>
+            <RowDefinition x:Name="row_Inhalt" Height="282*"/>
+            <RowDefinition Height="53*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="col_Encode" Width="50*"/>
+            <ColumnDefinition x:Name="col_Decode" Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Datei kodieren" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" FontSize="28" Margin="70,0,74,232" Width="252" Foreground="#FF10A037"/>
+        <Label Content="Datei zum kodieren auswählen:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="18" Width="376" Foreground="White"/>
+        <TextBox Text="Pfad auswählen" x:Name="tb_encodePfad" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="45" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Margin="49,93,0,0" Background="#FF82F382"/>
+        <Button x:Name="btn_EncodeDatei" Content="Auswählen" Grid.Row="1" Grid.Column="0" Width ="100" Height="45" Margin="245,93,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="EncodeOpen" Background="#FF21FD35"/>
+        <Label Content="Speicherort auswählen:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="10,137,0,0" FontSize="18" Width="376" Foreground="White"/>
+        <TextBox Text="Pfad auswählen" x:Name="tb_speicherEncodePfad" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="45" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Margin="49,176,0,0" Background="#FF82F382"/>
+        <Button x:Name="btn_encodeSave" Content="Auswählen" Grid.Row="1" Grid.Column="0" Width ="100" Height="45" Margin="245,176,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="EncodeSave" Background="#FF21FD35"/>
+        <Button Content="Kodierung starten" Grid.Column="0" Grid.Row="1" Width="123" Height="45" Margin="142,227,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Encode_start" Background="#FF21FD35"/>
+
+        <!--Decode-->
+        <Label Content="Datei enkodieren" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" FontSize="28" Margin="70,0,74,232" Width="252" Foreground="#FF1380BD"/>
+        <Label Content="Datei zum enkodieren auswählen:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="18" Width="376" Foreground="White"/>
+        <TextBox Text="Pfad auswählen" x:Name="tb_decodePfad" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="45" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Margin="49,93,0,0" Background="#FF7DF0FB"/>
+        <Button x:Name="btn_decodeDatei" Content="Auswählen" Grid.Row="1" Grid.Column="1" Width ="100" Height="45" Margin="245,93,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DecodeOpen" Background="#FF18C1DC"/>
+        <Label Content="Speicherort auswählen:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Margin="10,137,0,0" FontSize="18" Width="376" Foreground="White"/>
+        <TextBox Text="Pfad auswählen" x:Name="tb_speicherDecodePfad" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="45" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Margin="49,176,0,0" Background="#FF7DF0FB"/>
+        <Button x:Name="btn_decodeSave" Content="Auswählen" Grid.Row="1" Grid.Column="1" Width ="100" Height="45" Margin="245,176,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DecodeSave" Background="#FF18C1DC"/>
+        <Button Content="Enkodierung starten" Grid.Column="1" Grid.Row="1" Width="123" Height="45" Margin="143,227,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Decode_start" Background="#FF18C1DC"/>
+        <Label Content="BAJ Dateikodierer" Margin="245,10,209,5" FontWeight="Bold" FontSize="36" Grid.ColumnSpan="2" Foreground="#FFFDC121"/>
+        <Label Content="Bermin Agovic &amp; Jerome Hassgall" HorizontalAlignment="Left" Margin="311,10,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-0.545,0.038" FontSize="11" Height="43" Width="179" Grid.ColumnSpan="2" Foreground="White"/>
+    </Grid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <RoutedUICommand x:Key="Ctr1"/>
+            <RoutedUICommand x:Key="Ctr2"/>
+            <RoutedUICommand x:Key="Ctr3"/>
+            <RoutedUICommand x:Key="Ctr4"/>
+            <RoutedUICommand x:Key="Ctr5"/>
+            <RoutedUICommand x:Key="Ctr6"/>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="e" Modifiers="Ctrl" Command="{StaticResource Ctr1}"/>
+        <KeyBinding Key="d" Modifiers="Ctrl" Command="{StaticResource Ctr2}"/>
+        <KeyBinding Key="r" Modifiers="Ctrl" Command="{StaticResource Ctr3}"/>
+        <KeyBinding Key="t" Modifiers="Ctrl" Command="{StaticResource Ctr4}"/>
+        <KeyBinding Key="f" Modifiers="Ctrl" Command="{StaticResource Ctr5}"/>
+        <KeyBinding Key="g" Modifiers="Ctrl" Command="{StaticResource Ctr6}"/>
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource Ctr1}" Executed="Encode_start"/>
+        <CommandBinding Command="{StaticResource Ctr2}" Executed="Decode_start"/>
+        <CommandBinding Command="{StaticResource Ctr3}" Executed="EncodeOpen"/>
+        <CommandBinding Command="{StaticResource Ctr4}" Executed="EncodeSave"/>
+        <CommandBinding Command="{StaticResource Ctr5}" Executed="DecodeOpen"/>
+        <CommandBinding Command="{StaticResource Ctr6}" Executed="DecodeSave"/>
+    </Window.CommandBindings>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\bin\Debug\DatKod.exe.config
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\bin\Debug\DatKod.exe
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\bin\Debug\DatKod.pdb
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.csprojAssemblyReference.cache
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\MainWindow.g.cs
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\App.g.cs
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod_MarkupCompile.cache
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod_MarkupCompile.lref
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\MainWindow.baml
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.g.resources
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.Properties.Resources.resources
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.csproj.GenerateResource.cache
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.exe
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.pdb
+C:\Users\Bermin\Nextcloud\Dokumente\Schule\AE C#\01_Projekt\DatKod\obj\Debug\DatKod.csproj.CoreCompileInputs.cache

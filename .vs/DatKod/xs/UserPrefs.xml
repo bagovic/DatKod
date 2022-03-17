@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DatKod/MainWindow.xaml.cs">
+    <Files>
+      <File FileName="DatKod/MainWindow.xaml" Line="1" Column="1" />
+      <File FileName="DatKod/Encode.cs" Line="1" Column="1" />
+      <File FileName="DatKod/Decode.cs" Line="34" Column="21" />
+      <File FileName="DatKod/Header.cs" Line="121" Column="30" />
+      <File FileName="DatKod/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="DatKod/MainWindow.xaml.cs" Line="47" Column="59" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DatKod" expanded="True">
+            <Node name="DatKod" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainWindow.xaml" expanded="True">
+                <Node name="MainWindow.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
