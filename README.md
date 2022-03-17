@@ -1,5 +1,4 @@
 # DatKod
-Dateikodierer im BAJ Format
 
 Teamprojekt der Berufsfachschule für techn. Assistenten für Informatik Bamberg
 
